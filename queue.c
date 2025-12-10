@@ -4,7 +4,7 @@
 int queue[MAX];
 int front = -1, rear = -1;
 
-// Enqueue (insert)
+
 void enqueue(int value) {
     if (rear == MAX - 1) {
         printf("Queue Overflow\n");
@@ -16,7 +16,7 @@ void enqueue(int value) {
     printf("%d enqueued into queue\n", value);
 }
 
-// Dequeue (delete)
+
 int dequeue() {
     if (front == -1 || front > rear) {
         printf("Queue Underflow\n");
@@ -25,7 +25,7 @@ int dequeue() {
     return queue[front];
 }
 
-// Peek (front element)
+
 int peek() {
     if (front == -1 || front > rear) {
         printf("Queue is empty\n");
@@ -34,7 +34,7 @@ int peek() {
     return queue[front];
 }
 
-// Display
+
 void display() {
     if (front == -1 || front > rear) {
         printf("Queue is empty\n");
